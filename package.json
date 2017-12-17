@@ -5,7 +5,8 @@
   "scripts": {
     "start": "gulp watch",
     "build": "gulp build",
-    "lint": "eslint components",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
