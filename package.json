@@ -6,6 +6,7 @@
     "start": "gulp watch",
     "build": "gulp build",
     "lint": "eslint src",
+    "deploy": "npm version patch && npm publish",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
