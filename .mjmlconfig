@@ -1,0 +1,8 @@
+{
+  "packages": [
+    "./build/components/PaperstacFooter.js",
+    "./build/components/PaperstacHeader.js",
+    "./build/components/PaperstacSignature.js",
+    "./build/components/PrimaryButton.js"
+]
+}
