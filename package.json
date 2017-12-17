@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "eslint-plugin-jsx-a11y": "^5.1.1",
     "lodash": "^4.15.0",
     "mjml": "^3.1.1",
     "mjml-column": "^3.1.1",
@@ -32,6 +31,7 @@
     "eslint-config-react-app": "^2.0.1",
     "eslint-plugin-flowtype": "^2.40.1",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.5.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
