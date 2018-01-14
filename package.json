@@ -1,6 +1,6 @@
 {
   "name": "@paperstac/emails",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MJML files for Paperstac emails",
   "scripts": {
     "start": "gulp watch",
