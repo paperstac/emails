@@ -10,17 +10,6 @@
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "lodash": "^4.15.0",
-    "mjml": "^3.1.1",
-    "mjml-column": "^3.1.1",
-    "mjml-core": "^3.1.1",
-    "mjml-image": "^3.1.1",
-    "mjml-section": "^3.1.1",
-    "mjml-text": "^3.1.1",
-    "react": "^15.6.2",
-    "through2": "^2.0.3"
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -38,7 +27,16 @@
     "gulp-babel": "^7.0.0",
     "gulp-newer": "^1.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-watch": "^4.3.9"
+    "gulp-watch": "^4.3.9",
+    "lodash": "^4.15.0",
+    "mjml": "^3.1.1",
+    "mjml-column": "^3.1.1",
+    "mjml-core": "^3.1.1",
+    "mjml-image": "^3.1.1",
+    "mjml-section": "^3.1.1",
+    "mjml-text": "^3.1.1",
+    "react": "^15.6.2",
+    "through2": "^2.0.3"
   },
   "repository": {
     "type": "git",
