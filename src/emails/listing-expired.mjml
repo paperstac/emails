@@ -1,0 +1,41 @@
+<mjml>
+    <mj-head>
+        <mj-preview>Listing has expired</mj-preview>
+        <mj-attributes>
+            <mj-all
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                    font-size="16px"
+                    color="#323333"/>
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+        <mj-container background-color="#f5f8fa">
+
+            <paperstac-header/>
+
+            <mj-section background-color="#ffffff" padding="40 40 0 40" border-top="10px solid #047bb7">
+                <mj-column>
+                    <mj-text align="center">
+                        Your listing titled <strong><%= title %></strong> has expired, and is no longer viewable by Paperstac users.  This does not affect any current transactions you have with buyers concerning this listing.
+                        <% isPool ? 'If the assets in the listing are still for sale,' : 'If the asset in the listing is still for sale,' %>
+                        you can reactivate your listing for free.
+                    </mj-text>
+                    <primary-button text="Reactivate Listing" url="<%= url %>"/>
+                    <mj-text align="center">
+                        <h3>This listing includes...</h3>
+                        <ul style="text-align: left;">
+                            <% noteAddresses.forEach(function(noteAddress) { %><li><%- noteAddress %></li><% }); %>
+                        </ul>
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-section background-color="#ffffff" padding="40">
+                <paperstac-signature/>
+            </mj-section>
+
+            <paperstac-footer/>
+
+        </mj-container>
+    </mj-body>
+</mjml>
