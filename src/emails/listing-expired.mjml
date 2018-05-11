@@ -17,7 +17,7 @@
                 <mj-column>
                     <mj-text align="center">
                         Your listing titled <strong><%= title %></strong> has expired, and is no longer viewable by Paperstac users.  This does not affect any current transactions you have with buyers concerning this listing.
-                        <% isPool ? 'If the assets in the listing are still for sale,' : 'If the asset in the listing is still for sale,' %>
+                        <% if (isPool) { %>If the assets in the listing are still for sale,<% } else { %>If the asset in the listing is still for sale,<% } %>
                         you can reactivate your listing for free.
                     </mj-text>
                     <primary-button text="Reactivate Listing" url="<%= url %>"/>
