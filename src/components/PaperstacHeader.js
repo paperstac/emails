@@ -22,7 +22,7 @@ class CustomMjmlComponent extends Component {
 
     return (
       <Section {...this.props}>
-        <Column>
+        <Column width="100%">
           <Image
             width="96px"
             height="60px"

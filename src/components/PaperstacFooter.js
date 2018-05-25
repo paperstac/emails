@@ -34,7 +34,7 @@ class CustomMjmlComponent extends Component {
       </a>) : '';
 
     return (<Section>
-      <Column>
+      <Column width="100%">
         <Text font-size="13" color="#999999" align="center" padding-bottom="5">
           © 2018 PaperStac LLC. All rights reserved.
         </Text>
