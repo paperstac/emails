@@ -1,0 +1,52 @@
+<mjml>
+    <mj-head>
+        <mj-preview>Listing has expired</mj-preview>
+        <mj-attributes>
+            <mj-all
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                    font-size="16px"
+                    color="#323333"/>
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+        <mj-container background-color="#f5f8fa">
+
+            <paperstac-header/>
+
+            <mj-section background-color="#ffffff" padding="40 40 0 40" border-top="10px solid #047bb7">
+                <mj-column>
+                    <mj-text align="center" container-background-color="#EEE" font-weight="800">
+                        Transaction ID: <%= transactionId %>
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-section background-color="#ffffff" padding="20 40 0 40">
+                <mj-column>
+                    <mj-image width="30" height="30" border-radius="15" padding="0 0 5 0" src="<%= sellerAvatar %>" alt="<%= sellerName %>"/>
+                    <mj-text align="center" font-weight="800" padding="0 0 5 0">SELLER</mj-text>
+                    <mj-text align="center" padding="0 0 20 0"><%= sellerName %></mj-text>
+                </mj-column>
+                <mj-column>
+                    <mj-image width="30" height="30" border-radius="15" padding="0 0 5 0" src="<%= buyerAvatar %>" alt="<%= buyerName %>"/>
+                    <mj-text align="center" font-weight="800" padding="0 0 5 0">BUYER</mj-text>
+                    <mj-text align="center" padding="0 0 20 0"><%= buyerName %></mj-text>
+                </mj-column>
+            </mj-section>
+
+            <mj-section background-color="#ffffff" padding="20 40 0 40">
+                <mj-column>
+                    <mj-text align="center"><%= body %></mj-text>
+                    <primary-button text="View Transaction" url="<%= url %>"/>
+                </mj-column>
+            </mj-section>
+
+            <mj-section background-color="#ffffff" padding="0 40 40 40">
+                <paperstac-signature/>
+            </mj-section>
+
+            <paperstac-footer/>
+
+        </mj-container>
+    </mj-body>
+</mjml>
