@@ -16,10 +16,12 @@
             <mj-section background-color="#ffffff" padding="40 40 0 40" border-top="10px solid #047bb7">
                 <mj-column>
                     <mj-text align="center">
-                        If you are <span style="text-decoration: underline;">not</span> <strong><%= vestingProfile.signerName %><% if (vestingProfile.signerTitle) { %>, <%= vestingProfile.signerTitle %><% } %></strong> then please disregard this email.
+                        If you are <span style="text-decoration: underline;">not</span> "<strong><%= vestingProfile.signerName %><% if (vestingProfile.signerTitle) { %>, <%= vestingProfile.signerTitle %><% } %></strong>" then please disregard this email.
                     </mj-text>
                     <mj-text align="center">
-                        You have been sent a signature request for the <strong><%= document.type %></strong> on <strong>Paperstac Transaction <%= document.transactionId %></strong>.
+                        You have been sent a signature request for the following:
+                        <h3 style="margin: 20px 0 0 0"><%= document.type %></h3>
+                        <em style="font-size: 14px; color: #99a">(Paperstac Transaction <%= document.transactionId %>)</em>.
                     </mj-text>
                     <primary-button text="View and Sign Document" url="<%= url %>"/>
                 </mj-column>
