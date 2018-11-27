@@ -42,10 +42,6 @@ class CustomMjmlComponent extends Component {
           300 S Orange Ave, Suite 1000, Orlando, FL 32801
         </Text>
         <Text font-size="13" align="center">
-          <a href={`${blogUrl}&utm_content=footerTextLink`} target="_blank"
-             style={{ color: '#499DF3', marginRight: '20px' }}>
-            Read the Blog
-          </a>
           <a href="https://www.facebook.com/paperstac/" target="_blank"
              style={{ color: '#499DF3', marginRight: '20px' }}>
             Facebook
