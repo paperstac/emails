@@ -36,7 +36,7 @@ class CustomMjmlComponent extends Component {
     return (<Section>
       <Column width="100%">
         <Text font-size="13" color="#999999" align="center" padding-bottom="5">
-          © 2018 PaperStac LLC. All rights reserved.
+          © {new Date().getFullYear()} PaperStac LLC. All rights reserved.
         </Text>
         <Text font-size="13" color="#999999" align="center" padding-top="0">
           300 S Orange Ave, Suite 1000, Orlando, FL 32801
