@@ -15,9 +15,10 @@
 
             <mj-section background-color="#ffffff" padding="40 40 0 40" border-top="10px solid #047bb7">
                 <mj-column>
-                    <mj-text align="center"><%= bodyText %>
-                    </mj-text>
-                    <primary-button text="<%= actionLabel %>" url="<%= actionUrl %>" padding-bottom="0"/>
+                    <mj-text align="center"><%= bodyText %></mj-text>
+                    <% if (actionUrl) { %>
+                        <primary-button text="<%= actionLabel %>" url="<%= actionUrl %>" padding-bottom="0"/>
+                    <% } %>
                 </mj-column>
             </mj-section>
 
