@@ -38,8 +38,10 @@
                 <mj-column>
                     <mj-text align="center"><%= body %></mj-text>
                     <primary-button text="View Transaction" url="<%= url %>"/>
-                    <mj-text align="center" font-weight="800" padding="0 0 10 0">Notes in Transaction</mj-text>
-                    <% notes.forEach(function(note) { %><mj-text align="center" padding="0" font-size="14">• <%- note %></mj-text><% }); %>
+                    <mj-text align="center" padding="0 0 10 0">
+                        <div style="font-weight:bold;margin-bottom: 10px;">Notes in Transaction</div>
+                        <% notes.forEach(function(note) { %><div style="font-size:14px; text-align: center;">- <%- note %></div><% }); %>
+                    </mj-text>
                 </mj-column>
             </mj-section>
 
